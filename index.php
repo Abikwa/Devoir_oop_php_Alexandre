@@ -11,14 +11,30 @@
     <div id="corps">
         <h2>Premier travail traitant sur les bases en php</h2>
         <article>
-            <aside><!-- premierement la declaration des variable et affichage du contenu en php-->
+            <aside class="answer"><!-- premierement la declaration des variable et affichage du contenu en php-->
                 <?php
-                    echo "<span class='question'>declaration des variables en php</span>";
+                    echo "<span class='question'>declaration des variables en php </span>";
                     $Nom = "ABIKWA";
                     $prenom = "Alexander";
                     $adrese = "Mutanga";
                     echo "son Nom est <span id='nom'>".$Nom."</span> et son prenom est <span id='nom'>".$prenom.
-                    " habitant a <b><font color='blue'>".$adrese."</font></b>;
+                    " habitant a <b><font color='blue'>".$adrese."</font></b>";
+                ?>
+            </aside>
+            <aside class="answer"><!--  operation arthmetique-->
+                <?php
+                    echo "<span class='question'>operation arthmetique </span>";
+                    $val1 = 350;
+                    $val2 = 50;
+                    $somme = $val1 + $val2;
+                    $produit = $val1 * $val2;
+                    $difference = $val1 - $val2;
+                    $division = $val1 / $val2;
+                    echo "pour <b>".$val1."</b> et <b>".$val2."</b><br>.
+                         la somme est <span id='nom'><font color='blue'>".$somme."</font></span><br>".
+                         " le produit est <span id='nom'><font color='blue'>".$produit."</font></span><br>".
+                         " la difference est <span id='nom'><font color='blue'>".$difference."</font></span><br>".
+                         " la division est <span id='nom'><font color='blue'>".$division."</font></span><br>";
                 ?>
             </aside>
         </article>
