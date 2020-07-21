@@ -6,6 +6,7 @@ body{
     box-shadow: 1px 4px 3px 2px rgb(101, 101, 104);
     padding: 10px;
     padding-left: 5%;
+    background-color: rgb(170, 167, 167);
 }
 #titre{
     font-family: 'Times New Roman', Times, serif;
@@ -19,6 +20,7 @@ body{
     margin: 15px;
     padding: 3px;
     padding-left: 20px;
+    background-color: white;
 }
 .question{
     color: rgb(6, 6, 97);
@@ -26,4 +28,11 @@ body{
     text-shadow: 1px 1px rgb(52, 49, 56);
     text-shadow: 2px 2px 2px rgb(71, 70, 70);
     display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#nom{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: oblique;
+    font-size: 24px;
 }
