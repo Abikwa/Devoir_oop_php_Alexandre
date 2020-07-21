@@ -18,7 +18,7 @@
                     $prenom = "Alexander";
                     $adrese = "Mutanga";
                     echo "son Nom est <span id='nom'>".$Nom."</span> et son prenom est <span id='nom'>".$prenom.
-                    " habitant a <span id='nom'>".$adrese;
+                    " habitant a <b><font color='blue'>".$adrese."</font></b>;
                 ?>
             </aside>
         </article>
