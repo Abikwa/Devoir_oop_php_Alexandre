@@ -12,12 +12,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     color:  rgb(0, 0, 120);
     text-shadow: 1px 2px 1px black;
-    position: fixed;
     text-align: center;
-    z-index: 1;
-}
-article{
-    padding-top: 100px;
 }
 .answer{
     border: 1px solid rgb(101, 101, 104);

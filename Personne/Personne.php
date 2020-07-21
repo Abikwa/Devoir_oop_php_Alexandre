@@ -29,10 +29,10 @@ class Personne{
                 $type = "Majeur";
             else
                 $type = "Enfant";
-            echo "Vous etes  <span id='nom'><font color='blue'>".$this->nom."</font></span> <span id='nom'><font color='blue'>".$this->prenom."</font></span> du sexe <span id='nom'><font color='aqua'>".$this->sexe."</font></span> avec Age <font color='green'>".$this->age."</font> Par consequant vous etez <b><font color='cadetblue'>".$type."</font></b>"; 
+            echo "Vous etes  <span id='nom'><font color='blue'>".$this->nom."</font></span> <span id='nom'><font color='blue'>".$this->prenom."</font></span> du sexe <span id='nom'><font color='aqua'>".$this->sexe."</font></span> avec Age <font color='green'>".$this->age."</font> Par consequant vous etez <b><font color='cadetblue'>".$type."</font></b><br><br>"; 
         }
         else
-            echo "<font color='red'>saisir un age valide</font>";
+            echo "<font color='red'>saisir un age valide</font><br>";
     }
 
     /**

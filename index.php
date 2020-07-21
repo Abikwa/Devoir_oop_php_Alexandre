@@ -157,16 +157,15 @@
             </aside>
             <aside class="answer"><!--  pillier dE LA POO-->
                 <?php
+                     echo "<span class='question'>pillier dE LA POO-</span>";
                     $personne = new Personne("Abiwa", "Alexander", "Masculin", "28");
                     $personne->AffichagePersonne();
-                    echo "<span class='question'>tableau</span>";
-                    $table = array(10,21,32,43,55);
-                    echo "c'est untableau de  <b>5</b> valeurs dont <br>". 
-                    "le premier est  <span id='nom'><font color='trail'>".$table[0]."</font></span><br>".
-                    "le deuxieme est  <span id='nom'><font color='trail'>".$table[1]."</font></span><br>".
-                    "le troisieme est  <span id='nom'><font color='trail'>".$table[2]."</font></span><br>".
-                    "le quatrieme est  <span id='nom'><font color='trail'>".$table[3]."</font></span><br>".
-                    "le cinquieme est  <span id='nom'><font color='trail'>".$table[4]."</font></span><br>";
+                    $personne = new Personne("ASPEN", "malo", "Masculin", "12");
+                    $personne->AffichagePersonne();
+                    $personne = new Personne("alice", "Gloria", "Feminin", "55");
+                    $personne->AffichagePersonne();
+                    $personne = new Personne("PAscal", "Nkurumziza", "Masculin", "99");
+                    $personne->AffichagePersonne();
                 ?>
             </aside>
         </article>
