@@ -122,20 +122,19 @@
                             $resultat = "saisir la prmiere valeur aussi";
                     }
                     if(isset($nbr1))
-                    {
                         echo " <span id='nom'><font color='trail'>".$nbr1."</font></span> ".$calc."  <span id='nom'><font color='trail'>".$nbr2."</font></span> = <span id='nom'><font color='blue'>".$resultat."</font></span><br>";
-                   
-                    }
-                    else
+                   else if(isset($resultat))
                         echo "<span id='nom'><font color='red'>".$resultat."</font></span>";
+                    else
+                        echo "<b>saisir deux valeur pour effectuer un simple calcule</b>";
                 ?>
                 <form action="" method="POST">
                     <table>
                         <tr>
-                            <td><input type="number" name="val1" /></td>
+                            <td><input type="number" name="val1" placeholder="valeur 1"/></td>
                         </tr>
                         <tr>
-                            <td><input type="number" name="val2" /></td>
+                            <td><input type="number" name="val2" placeholder = "valeur 2" /></td>
                         </tr>
                         <tr>
                             <td>
@@ -146,7 +145,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><input type="submit" name="calculer" value = "Calculer" /></td>
+                            <td><input type="submit" name="calculer" value = "Calculer"  id="submit"/></td>
                         </tr>
                     </table>
                 </form>
@@ -154,6 +153,7 @@
         </article>
     </div>
     <footer>
+        <p align="right"><a href="mailto:abikalex8@gmail.com">Fait par ABIKWANINE BATUMIKE Alexandre</a></p>
     </footer>
 </body>
 </html>
