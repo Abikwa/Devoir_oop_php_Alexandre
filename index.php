@@ -47,14 +47,28 @@
                         echo "<span id='nom'><font color='blue'>il est faux</font></span>";
                 ?>
             </aside>
-            <aside class="answer"><!--  booleens-->
+            <aside class="answer"><!--  tableau-->
                 <?php
-                    echo "<span class='question'>booleen</span>";
-                    $val = TRUE;
-                    if ($val)
-                        echo " <span id='nom'><font color='blue'>il est vrai</font></span>";
-                    else
-                        echo "<span id='nom'><font color='blue'>il est faux</font></span>";
+                    echo "<span class='question'>tableau</span>";
+                    $table = array(10,21,32,43,55);
+                    echo "c'est untableau de  <b>5</b> valeurs dont <br>". 
+                    "le premier est  <span id='nom'><font color='trail'>".$table[0]."</font></span><br>".
+                    "le deuxieme est  <span id='nom'><font color='trail'>".$table[1]."</font></span><br>".
+                    "le troisieme est  <span id='nom'><font color='trail'>".$table[2]."</font></span><br>".
+                    "le quatrieme est  <span id='nom'><font color='trail'>".$table[3]."</font></span><br>".
+                    "le cinquieme est  <span id='nom'><font color='trail'>".$table[4]."</font></span><br>";
+                ?>
+            </aside>
+            <aside class="answer"><!--  structure conditionnelle-->
+                <?php
+                    echo "<span class='question'>structure conditionnelle</span>";
+                    $table = array(10,21,32,43,55);
+                    echo "c'est untableau de  <b>5</b> valeurs dont <br>". 
+                    "le premier est  <span id='nom'><font color='trail'>".$table[0]."</font></span><br>".
+                    "le deuxieme est  <span id='nom'><font color='trail'>".$table[1]."</font></span><br>".
+                    "le troisieme est  <span id='nom'><font color='trail'>".$table[2]."</font></span><br>".
+                    "le quatrieme est  <span id='nom'><font color='trail'>".$table[3]."</font></span><br>".
+                    "le cinquieme est  <span id='nom'><font color='trail'>".$table[4]."</font></span><br>";
                 ?>
             </aside>
         </article>
