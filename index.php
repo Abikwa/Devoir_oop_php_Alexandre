@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="corps">
-        <h2>Premier travail traitant sur les bases en php</h2>
+        <h2 id="titre">Premier travail traitant sur les bases en php</h2>
         <article>
             <aside class="answer"><!-- premierement la declaration des variable et affichage du contenu en php-->
                 <?php
@@ -18,7 +18,7 @@
                     $prenom = "Alexander";
                     $adrese = "Mutanga";
                     echo "son Nom est <span id='nom'>".$Nom."</span> et son prenom est <span id='nom'>".$prenom.
-                    " habitant a <b><font color='blue'>".$adrese."</font></b>";
+                    "</span> habitant a <b><font color='blue'>".$adrese."</font></b>";
                 ?>
             </aside>
             <aside class="answer"><!--  operation arthmetique-->
@@ -30,11 +30,31 @@
                     $produit = $val1 * $val2;
                     $difference = $val1 - $val2;
                     $division = $val1 / $val2;
-                    echo "pour <b>".$val1."</b> et <b>".$val2."</b><br>.
-                         la somme est <span id='nom'><font color='blue'>".$somme."</font></span><br>".
-                         " le produit est <span id='nom'><font color='blue'>".$produit."</font></span><br>".
-                         " la difference est <span id='nom'><font color='blue'>".$difference."</font></span><br>".
-                         " la division est <span id='nom'><font color='blue'>".$division."</font></span><br>";
+                    echo "pour <b>".$val1."</b> et <b>".$val2."</b><br>".
+                         "la somme est <span id='nom'><font color='blue'>".$somme."</font></span><br>".
+                         "le produit est <span id='nom'><font color='blue'>".$produit."</font></span><br>".
+                         "la difference est <span id='nom'><font color='blue'>".$difference."</font></span><br>".
+                         "la division est <span id='nom'><font color='blue'>".$division."</font></span><br>";
+                ?>
+            </aside>
+            <aside class="answer"><!--  booleens-->
+                <?php
+                    echo "<span class='question'>booleen</span>";
+                    $val = TRUE;
+                    if ($val)
+                        echo " <span id='nom'><font color='blue'>il est vrai</font></span>";
+                    else
+                        echo "<span id='nom'><font color='blue'>il est faux</font></span>";
+                ?>
+            </aside>
+            <aside class="answer"><!--  booleens-->
+                <?php
+                    echo "<span class='question'>booleen</span>";
+                    $val = TRUE;
+                    if ($val)
+                        echo " <span id='nom'><font color='blue'>il est vrai</font></span>";
+                    else
+                        echo "<span id='nom'><font color='blue'>il est faux</font></span>";
                 ?>
             </aside>
         </article>
