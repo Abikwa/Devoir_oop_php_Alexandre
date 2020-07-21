@@ -1,3 +1,30 @@
+<?php
+    use Devoir_oop_php_Alexandre\Personne\Personne\Personne;
+    include_once("Personne\Personne.php");
+    
+    function calculatrice($val1, $val2, $type)
+    {
+        $resultat;
+        if(intval($val1) > 0)
+        {
+            $val1 = intval($val1);
+            $val2 = intval($val2);
+            if($type == "+")
+                $resultat = $val1 + $val2;
+            elseif($type == "*")
+                $resultat = $val1 + $val2;
+            elseif($type == "/")
+                $resultat = $val1 / $val2;
+            elseif($type == "-")
+                $resultat = $val1 - $val2;
+            else
+                $resultat = "ce type d'operation n'est pas disponible";
+        }
+        else
+            $resultat = "la premiere valeur doit etre au moins superieur a zero";
+        return $resultat;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,28 +106,6 @@
             <aside class="answer"><!--  fonction-->
                 <?php
                     echo "<span class='question'>fonction</span>";
-                    function calculatrice($val1, $val2, $type)
-                    {
-                        $resultat;
-                        if(intval($val1) > 0)
-                        {
-                            $val1 = intval($val1);
-                            $val2 = intval($val2);
-                            if($type == "+")
-                                $resultat = $val1 + $val2;
-                            elseif($type == "*")
-                                $resultat = $val1 + $val2;
-                            elseif($type == "/")
-                                $resultat = $val1 / $val2;
-                            elseif($type == "-")
-                                $resultat = $val1 - $val2;
-                            else
-                                $resultat = "ce type d'operation n'est pas disponible";
-                        }
-                        else
-                            $resultat = "la premiere valeur doit etre au moins superieur a zero";
-                        return $resultat;
-                    }
                     if(isset($_POST['calculer']))
                     {
                         if(isset($_POST['val1']) and !empty($_POST['val1']))
@@ -149,6 +154,20 @@
                         </tr>
                     </table>
                 </form>
+            </aside>
+            <aside class="answer"><!--  pillier dE LA POO-->
+                <?php
+                    $personne = new Personne("Abiwa", "Alexander", "Masculin", "28");
+                    $personne->AffichagePersonne();
+                    echo "<span class='question'>tableau</span>";
+                    $table = array(10,21,32,43,55);
+                    echo "c'est untableau de  <b>5</b> valeurs dont <br>". 
+                    "le premier est  <span id='nom'><font color='trail'>".$table[0]."</font></span><br>".
+                    "le deuxieme est  <span id='nom'><font color='trail'>".$table[1]."</font></span><br>".
+                    "le troisieme est  <span id='nom'><font color='trail'>".$table[2]."</font></span><br>".
+                    "le quatrieme est  <span id='nom'><font color='trail'>".$table[3]."</font></span><br>".
+                    "le cinquieme est  <span id='nom'><font color='trail'>".$table[4]."</font></span><br>";
+                ?>
             </aside>
         </article>
     </div>
