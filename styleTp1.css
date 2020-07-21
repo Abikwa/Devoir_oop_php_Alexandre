@@ -1,0 +1,29 @@
+body{
+    font-family:Tahoma,Geneva,sans-serif;
+    font-weight:400;
+    font-size: 20px;
+    border-radius: 16px;
+    box-shadow: 1px 4px 3px 2px rgb(101, 101, 104);
+    padding: 10px;
+    padding-left: 5%;
+}
+#titre{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 120);
+    text-shadow: 1px 2px 1px black;
+}
+.answer{
+    border: 1px solid rgb(101, 101, 104);
+    border-radius: 16px;
+    box-shadow: 2px 1px 4px 3px rgb(58, 58, 109);
+    margin: 15px;
+    padding: 3px;
+    padding-left: 20px;
+}
+.question{
+    color: rgb(6, 6, 97);
+    font-weight: bolder;
+    text-shadow: 1px 1px rgb(52, 49, 56);
+    text-shadow: 2px 2px 2px rgb(71, 70, 70);
+    display: block;
+}
